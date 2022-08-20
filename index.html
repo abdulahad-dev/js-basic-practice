@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content-change {
+            justify-content: center;
+            display: grid;
+            background: #fff2f2;
+        }
+
+        .content-change h3 {
+            color: green;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        button {
+            display: inline-block;
+            width: 22%;
+            padding: 10px;
+            background: pink;
+            border-style: none;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>JavaScript Introduction</h2>
+
+    <ol type="1">
+        <li>JavaScript Can Change HTML Content</li>
+        <li>JavaScript Can Change HTML Attribute Values</li>
+        <li>JavaScript Can Change HTML Styles (CSS)</li>
+        <li>JavaScript Can Hide HTML Elements</li>
+        <li>JavaScript Can Show HTML Elements</li>
+    </ol>
+
+    <div class="content-change">
+        <h2>01. JavaScript Can Change HTML Content</h2>
+        <h3 id="demo">I love you Shipa</h3>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = 'She is only My Best Friend'">Click
+            Me!</button>
+    </div>
+
+    <div class="content-change">
+        <h2>02. JavaScript Can Change HTML Attribute Values</h2>
+
+        <button onclick="document.getElementById('myImage').src = 'images/bulb-on.png';  ">Turn on the light</button>
+        <img id="myImage" src="images/bulb-off.png" alt="" width="150">
+        <button onclick="document.getElementById('myImage').src = 'images/bulb-off.png'; ">Turn off the light</button>
+    </div>
+
+
+</body>
+
+</html>
